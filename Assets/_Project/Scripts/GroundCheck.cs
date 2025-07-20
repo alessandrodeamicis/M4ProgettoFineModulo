@@ -18,7 +18,7 @@ public class GroundCheck : MonoBehaviour
         {
             _controller.Jump();
         }
-        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, _groundedCheckDistance, LayerMask.GetMask("Ground")))
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, _groundedCheckDistance))
         {
             _grounded = true;
         }
